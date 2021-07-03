@@ -1,0 +1,14 @@
+{
+  "name": "silveirajedi/docker-apache-php-mariadb",
+  "description": "Exemplo de Composer para teste no ambiente Docker",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leandro",
+      "email": "silveira.jedi@gmail.com"
+    }
+  ],
+  "require": {
+  }
+}

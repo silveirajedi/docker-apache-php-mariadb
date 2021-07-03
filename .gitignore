@@ -1,0 +1,4 @@
+.idea
+db_data
+vendor
+composer.lock

@@ -14,14 +14,14 @@ chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
 # chrome_path = '/usr/bin/google-chrome %s'
 
 if dockerinit == 0:
-    dockerapacherw = os.system("docker exec projeto-app a2enmod rewrite")
+    dockerapacherw = os.system("docker container exec projeto-app a2enmod rewrite")
     print("[1] ----> Executando re-escrita do Apache2...")
 
     if dockerapacherw == 0:
-        dockerapacherestart = os.system("docker restart projeto-app")
+        dockerapacherestart = os.system("docker container restart projeto-app")
         print("[2] ---->  Reiniciando Apache2...")
         print("[3] ---->  Atualizando Dependências do Composer...")
-        dockerphpcomposer = os.system("docker exec projeto-app composer update")
+        dockerphpcomposer = os.system("docker container exec projeto-app composer update")
 
     else:
         print("Não foi possível reiniciar o Apache2. Verifique o status rodando um docker ps")

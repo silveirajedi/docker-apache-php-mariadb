@@ -8,7 +8,7 @@
 
 Docker-Apache-PHP-MariaDB é um servidor rodando em Docker que conta com a instalação e configuração do Apache2, PHP 7.4, Xdebug, Composer e MariaDB. 
 
-Para facilitar o acesso e execução dos comandos em Docker um arquivo desenvolvido em Python foi criado para administração. 
+Para facilitar o acesso e execução dos comandos em Docker um arquivo desenvolvido em Python (Windows OS) e Shell Script (Linux OS) foi criado para administração. 
 
 ##### Serviços Configurados:
 
@@ -33,17 +33,30 @@ Se existir no seu projeto dependências do composer crie o arquivo composer.json
 
 **[Opcional]** Para que seu Navegador abra automaticamente quando o terminar de executar o servidor verique o sistema operacional que está utilizando e descomente a linha do arquivo *server-up.py* referente ao seu  sistema.
 
-Para iniciar o servidor execute o seguinte comando:
+Para iniciar o servidor execute o seguinte comando no Windows:
 
 ```bash
 python server-up.py
 ```
 
-Para finalizar o servidor execute o seguinte comando:
+No Linux: 
+
+```bash
+sh linux-server.sh start
+```
+
+Para finalizar o servidor execute o seguinte comando no Windows:
 
 ```bash
 python server-down.py
 ```
+
+No Linux:
+
+```bash
+sh linux-server.sh stop
+```
+
 
 ## Support
 

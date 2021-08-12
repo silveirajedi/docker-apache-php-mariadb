@@ -4,14 +4,7 @@ import webbrowser
 dockerinit = os.system("docker-compose up -d")
 url = 'http://localhost'
 
-# MacOS
-#chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
-
-# Windows
 chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
-
-# Linux
-# chrome_path = '/usr/bin/google-chrome %s'
 
 if dockerinit == 0:
     dockerapacherw = os.system("docker container exec projeto-app a2enmod rewrite")

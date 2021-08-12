@@ -2,7 +2,8 @@
 
 ##### Simples servidor Apache2 com PHP 7.4 (Xdebug + composer) e MariaDB rodando em Docker.
 
-
+## Versão
+2.0
 
 ## Sobre
 

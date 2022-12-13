@@ -10,8 +10,8 @@
     }
   ],
   "require": {
-    "php" : "^7.4",
-    "ext-pdo" : "^7.4",
+    "php" : "^8.1",
+    "ext-pdo" : "^8.1",
     "phpmailer/phpmailer" : "^6.2"
   }
 }

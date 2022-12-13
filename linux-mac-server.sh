@@ -1,33 +1,39 @@
 #!/bin/bash
 
 ##################################################
-# SCRIPT PARA LINUX VERSÃO 1.0 - Leandro Silveira
+# SCRIPT PARA LINUX/MAC VERSÃO 1.0 - Leandro Silveira
 ##################################################
 
 iniciarDocker() {
   docker-compose up -d
+  clear
   echo
   echo "--== Aplicando Reescrita no Apache ==--"
   echo
   sleep 2
   docker container exec projeto-app a2enmod rewrite
   docker container restart projeto-app
+  clear
   echo
   echo "--== Atualizando Composer ==--"
   echo
   sleep 2
   docker container exec projeto-app composer update
+  clear
   echo
-  echo "--== SERVIDOR INICIADO! BORA CODAR ==--"
-  echo "by Leandro Silveira"
+  echo "--=======================--"
+  echo "--== SERVIDOR INICIADO ==--"
+  echo "--=======================--"
   echo
 }
 
 finalizarDocker() {
   docker-compose down
+  clear
   echo
-  echo "--== SERVIDOR FINALIZADO! HORA DE TOMAR UM CAFÉ ==--"
-  echo "by Leandro Silveira"
+  echo "--=========================--"
+  echo "--== SERVIDOR FINALIZADO ==--"
+  echo "--=========================--"
   echo
 }
 

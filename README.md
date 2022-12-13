@@ -1,6 +1,6 @@
 # Docker-Apache-PHP-MariaDB
 
-##### Simples servidor Apache2 com PHP 8.1 (Xdebug + composer) e MariaDB rodando em Docker.
+##### Simples Servidor Apache2 com PHP 8.1 (Xdebug + Composer) e MariaDB rodando em Docker.
 
 ## Versão
 3.0
@@ -35,46 +35,47 @@ Para facilitar o acesso e execução dos comandos em Docker um arquivo desenvolv
 
 - Docker (https://docs.docker.com/get-docker/)
 - Python (https://www.python.org/downloads/) (somente para Windows)
+- WSL 2 (https://learn.microsoft.com/pt-br/windows/wsl/install) (somente para Windows)
 
 ## Instalação
 
-Após a instalação do Docker e do Python criar dentro do repositório do seu sistema a pasta *db_data* para armazenar os arquivos do Banco de Dados MariaDB (caso queira outro repositório altere o arquivo docker-compose.yml).
+Após a instalação do Docker , Python (Windows) e WSL 2 (Windows) criar dentro do repositório do seu sistema a pasta *db_data* para armazenar os arquivos do Banco de Dados MariaDB (caso queira outro repositório altere o arquivo docker-compose.yml).
 
-Se existir no seu projeto dependências do composer crie o arquivo composer.json (arquivo exemplo dentro desse repositório) que ele fará a instalação automática assim que executar o servidor. 
+Se existir no seu projeto dependências do composer crie o arquivo composer.json (arquivo exemplo dentro desse repositório) que ele fará a instalação automática assim que executar o servidor.
 
-Para iniciar o servidor execute o seguinte comando no Windows:
+**Windows**
+
+Iniciar/Finalizar Servidor:
 
 ```bash
 python server-up.py
 ```
 
-No Linux ou Mac: 
-
-```bash
-sh linux-mac-server.sh start
-```
-
-Para finalizar o servidor execute o seguinte comando no Windows:
-
 ```bash
 python server-down.py
 ```
 
-No Linux ou Mac:
+**Linux ou Mac**
+
+Iniciar/Finalizar Servidor:
+
+```bash
+sh linux-mac-server.sh start
+```
 
 ```bash
 sh linux-mac-server.sh stop
 ```
 
 
-## Support
+## Suporte
 
-###### Problemas: Se você descobrir algum problema, envie um e-mail para silveira.jedi@gmail.com em vez de usar o rastreador de problemas. - Obrigado
+###### Qualquer dúvida ou problema envie um e-mail para silveira.jedi@gmail.com... Enjoy ;)
 
-## Credits
+## Créditos
 
 - [Leandro Silveira](https://github.com/silveirajedi) (Developer)
 
-## License
+## Licença
 
 The MIT License (MIT).

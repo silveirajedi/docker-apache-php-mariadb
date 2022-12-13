@@ -1,10 +1,6 @@
 import os
-import webbrowser
 
 dockerinit = os.system("docker-compose up -d")
-url = 'http://localhost'
-
-chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
 
 if dockerinit == 0:
     dockerapacherw = os.system("docker container exec projeto-app a2enmod rewrite")
@@ -16,7 +12,6 @@ if dockerinit == 0:
         print("[3] ---->  Atualizando Dependências do Composer...")
         dockerphpcomposer = os.system("docker container exec projeto-app composer update")
         print("\n\n --== SERVIDOR INICIADO ==-- \n\n")
-        webbrowser.get(chrome_path).open(url)
 
     else:
         print("Não foi possível reiniciar o Apache2. Verifique o status rodando um docker ps")

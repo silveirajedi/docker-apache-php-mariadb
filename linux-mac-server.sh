@@ -8,6 +8,12 @@ iniciarDocker() {
   docker-compose up -d
   clear
   echo
+  echo "--== Atualizando php.ini ==--"
+  echo
+  sleep 2
+  docker container exec projeto-app cp /var/www/html/server-config/php.ini /usr/local/etc/php
+  clear
+  echo
   echo "--== Aplicando Reescrita no Apache ==--"
   echo
   sleep 2

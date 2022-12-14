@@ -67,6 +67,10 @@ sh linux-mac-server.sh start
 sh linux-mac-server.sh stop
 ```
 
+## Extra
+
+Caso seja necessário alterar configurações do php.ini basta editar o arquivo que se encontra na pasta server-config
+
 
 ## Suporte
 

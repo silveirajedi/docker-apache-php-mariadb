@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##################################################
-# SCRIPT PARA LINUX/MAC VERSÃO 1.0 - Leandro Silveira
+# SCRIPT PARA LINUX/MAC VERSÃO 2.0 - Leandro Silveira
 ##################################################
 
 iniciarDocker() {

@@ -27,6 +27,7 @@ Para facilitar o acesso e execução dos comandos em Docker um arquivo desenvolv
   - pdo
   - pdo_mysql
   - gd
+  - exif tool
 - Xdebug 3.2
 - Composer 2.1
 - MariaDB

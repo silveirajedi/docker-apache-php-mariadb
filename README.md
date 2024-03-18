@@ -1,13 +1,13 @@
 # Docker-Apache-PHP-MariaDB
 
-##### Simples Servidor Apache2 com PHP 8.2 (Xdebug + Composer) e MariaDB rodando em Docker.
+##### Simples Servidor Apache2 com PHP 8.3 (Xdebug + Composer) e MariaDB rodando em Docker.
 
 ## Versão
-3.1
+3.3
 
 ## Sobre
 
-Docker-Apache-PHP-MariaDB é um servidor rodando em Docker que conta com a instalação e configuração do Apache2, PHP 8.2, Xdebug, Composer e MariaDB. 
+Docker-Apache-PHP-MariaDB é um servidor rodando em Docker que conta com a instalação e configuração do Apache2, PHP 8.3, Xdebug, Composer e MariaDB. 
 
 Para facilitar o acesso e execução dos comandos em Docker um arquivo desenvolvido em Python (Windows OS) e Shell Script (Linux OS | Mac OS) foi criado para administração. 
 
@@ -23,12 +23,12 @@ Para facilitar o acesso e execução dos comandos em Docker um arquivo desenvolv
   - libjpeg-dev
   - libfreetype6-dev
 - Apache2
-- PHP 8.2
+- PHP 8.3
   - pdo
   - pdo_mysql
   - gd
   - exif tool
-- Xdebug 3.2
+- Xdebug 3.3.1
 - Composer 2.1
 - MariaDB
 

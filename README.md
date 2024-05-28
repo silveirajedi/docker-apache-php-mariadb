@@ -3,7 +3,7 @@
 ##### Simples Servidor Apache2 com PHP 8.3 (Xdebug + Composer) e MariaDB rodando em Docker.
 
 ## Versão
-3.3
+3.4
 
 ## Sobre
 

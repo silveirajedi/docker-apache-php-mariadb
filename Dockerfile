@@ -1,9 +1,6 @@
 # Use a especific version of php and apache image
 FROM php:8.3-apache
 
-# Config the env timezone
-ENV timezone=America/Sao_Paulo
-
 # Update system and install git, zip, php libs and exiftool, then clear cache
 RUN apt-get update && \
     apt-get install -y git --no-install-recommends && \
